@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.bondar.common.entities.Client" table="Client" catalog="test">
+        <id name="inn" type="java.lang.Integer">
+            <column name="inn"/>
+        </id>
+        <property name="firstName" type="string">
+            <column name="firstName" length="32"/>
+        </property>
+        <property name="lastName" type="string">
+            <column name="lastName" length="32"/>
+        </property>
+        <property name="middleName" type="string">
+            <column name="middleName" length="32"/>
+        </property>
+    </class>
+</hibernate-mapping>
